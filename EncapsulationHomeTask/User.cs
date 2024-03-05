@@ -2,7 +2,6 @@
 {
     class User
     {
-        string _userName;
         public string UserName { get; set; }
 
         string _password;
@@ -40,6 +39,13 @@
                 }
                 _age = value;
             }
+        }
+
+        public User(string username, string password)
+        {
+            UserName = username;
+            Password=password;
+            
         }
 
         private string RulesOfPassword(string password)

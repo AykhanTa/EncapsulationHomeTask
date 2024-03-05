@@ -4,12 +4,10 @@
     {
         static void Main(string[] args)
         {
-            User user = new User();
-            user.UserName = "Test";
-            user.Password = "";
-            user.Age = -10;
-            
-            
+            User user = new User("Test", "password1");
+            user.Age = -20;
+            Console.WriteLine(user.UserName);
+            Console.WriteLine(user.Age);
 
         }
     }
